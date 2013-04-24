@@ -16,6 +16,12 @@
 	  Developer: ${project.developers[0].developer.name}
   </description>
 
+	<scm>
+		<!-- Use with Release Plugin -->
+		<developerConnection>scm:git:git@github.com:steveking20/fred.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
 	<distributionManagement>
 		<repository>
 			<id>localhost_nexus_releases</id>
