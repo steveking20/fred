@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.xiam</groupId>
@@ -15,11 +16,22 @@
 	  Developer: ${project.developers[0].developer.name}
   </description>
 
+	<!-- <scm> <developerConnection>scm:git:git@github.com:steveking20/fred.git</developerConnection> 
+		<tag>HEAD</tag> </scm> -->
+
 	<scm>
-		<!-- Use with Release Plugin -->
-		<developerConnection>scm:git:git@github.com:steveking20/fred.git</developerConnection>
-		<tag>HEAD</tag>
+		<connection>
+   scm:git:ssh://github.com/steveking20/fred.git
+   </connection>
+		<developerConnection>
+   scm:git:ssh://git@github.com/steveking20/fred.git
+   </developerConnection>
+		<url>
+   http://github.com/steveking20/fred
+   </url>
 	</scm>
+
+
 
 	<distributionManagement>
 		<repository>
